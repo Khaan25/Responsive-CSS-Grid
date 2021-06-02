@@ -1,0 +1,95 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;700;900&display=swap");
+/* ========== VARIABLES ========== */
+:root {
+  /* COLORS */
+  --body-background-color: #f9f9f9;
+  --b-background-color: #7B86F5;
+  /* TypoGraphy */
+  --body-font: 'Poppins', sans-serif;
+}
+
+/* ========== BASE ========== */
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+/* ========== LAYOUT ========== */
+body {
+  background-color: var(--body-background-color);
+  min-height: 100vh;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (30ch)[auto-fit];
+      grid-template-columns: repeat(auto-fit, 30ch);
+  place-content: center;
+  grid-gap: 5vh;
+  max-width: calc((30ch * 3) + (5vh * 2) + 2rem);
+  margin-left: auto;
+  margin-right: auto;
+  padding: 1rem;
+  font-family: var(--body-font);
+}
+
+/* ========== SPAN ========== */
+span {
+  background-color: white;
+  padding: 1rem;
+  border-radius: 7px;
+  -webkit-box-shadow: 0 2px 6px -2px rgba(0, 0, 0, 0.42);
+          box-shadow: 0 2px 6px -2px rgba(0, 0, 0, 0.42);
+  height: 30vh;
+  display: -ms-grid;
+  display: grid;
+  grid-gap: 0.5rem;
+  /* ========== B TAG ========== */
+}
+
+span b {
+  background-color: var(--b-background-color);
+  border-radius: 4px;
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+  color: white;
+  font-size: 1.5rem;
+}
+
+span.template {
+  /* ========== 2 COLUMN SPAN ========== */
+  /* ========== 3 COLUMN SPAN ========== */
+  /* ========== 4 BOXES SPAN ========== */
+}
+
+span.template-2col {
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+}
+
+span.template-3col {
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+}
+
+span.template-4up {
+  -ms-grid-rows: (1fr)[2];
+  -ms-grid-columns: (1fr)[2];
+      grid-template: repeat(2, 1fr)/repeat(2, 1fr);
+}
+
+span.template-sidebar--left {
+  grid-template: "sidebar mainA" "sidebar mainB";
+}
+
+span.template-sidebar--left > :nth-child(1) {
+  grid-area: sidebar;
+}
+
+span.template-sidebar--right {
+  grid-template: "mainA sidebar" "mainB sidebar";
+}
+
+span.template-sidebar--right > :nth-child(3) {
+  grid-area: sidebar;
+}
+/*# sourceMappingURL=style.css.map */
