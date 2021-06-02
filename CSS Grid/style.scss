@@ -31,66 +31,17 @@ body
 }
 
 /* ========== SPAN ========== */
-span
-{
-    background-color: white;
-    padding: 1rem;
-    border-radius: 7px;
-    box-shadow: 0 2px 6px -2px rgba(black, 0.42);
-    height: 30vh;
-    display: grid;
-    grid-gap: 0.5rem;
-
     /* ========== B TAG ========== */
-    b{
-        background-color: var(--b-background-color);
-        border-radius: 4px;
-        display: grid;
-        place-items: center;
-        color: white;
-        font-size: 1.5rem;
-    }
-    &.template
-    {
         // Using `repeat();` lets us explicity define
         // the number of rows or columns to allow.
         /* ========== 2 COLUMN SPAN ========== */
-        &-2col
-        {
-            grid-template-columns: repeat(2, 1fr);
-        }
+     
         /* ========== 3 COLUMN SPAN ========== */
-        &-3col
-        {
-            grid-template-columns: repeat(3, 1fr);
-        }
+     
         // NOTE 2col will also create this arrangment
         // this is just more explicit
         /* ========== 4 BOXES SPAN ========== */
-        &-4up
-        {
-            // grid-template-rows / grid-template-columns
-            grid-template: repeat(2, 1fr) / repeat(2, 1fr);
-        }       
-        &-sidebar--left
-        {
-            grid-template: "sidebar mainA"
-						   "sidebar mainB";
 
-			> :nth-child(1) 
-            {
-				grid-area: sidebar;
-			}
-        }
-        &-sidebar--right 
-        {
-			grid-template: "mainA sidebar"
-						   "mainB sidebar";
-
-			> :nth-child(3) 
-   {
-				grid-area: sidebar;
-			}
-		}
-    }
+       // grid-template-rows / grid-template-columns
+       
 }
