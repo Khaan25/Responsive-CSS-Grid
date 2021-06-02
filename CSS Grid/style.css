@@ -32,64 +32,11 @@ body {
 }
 
 /* ========== SPAN ========== */
-span {
-  background-color: white;
-  padding: 1rem;
-  border-radius: 7px;
-  -webkit-box-shadow: 0 2px 6px -2px rgba(0, 0, 0, 0.42);
-          box-shadow: 0 2px 6px -2px rgba(0, 0, 0, 0.42);
-  height: 30vh;
-  display: -ms-grid;
-  display: grid;
-  grid-gap: 0.5rem;
+
   /* ========== B TAG ========== */
-}
 
-span b {
-  background-color: var(--b-background-color);
-  border-radius: 4px;
-  display: -ms-grid;
-  display: grid;
-  place-items: center;
-  color: white;
-  font-size: 1.5rem;
-}
-
-span.template {
   /* ========== 2 COLUMN SPAN ========== */
   /* ========== 3 COLUMN SPAN ========== */
   /* ========== 4 BOXES SPAN ========== */
-}
 
-span.template-2col {
-  -ms-grid-columns: (1fr)[2];
-      grid-template-columns: repeat(2, 1fr);
-}
-
-span.template-3col {
-  -ms-grid-columns: (1fr)[3];
-      grid-template-columns: repeat(3, 1fr);
-}
-
-span.template-4up {
-  -ms-grid-rows: (1fr)[2];
-  -ms-grid-columns: (1fr)[2];
-      grid-template: repeat(2, 1fr)/repeat(2, 1fr);
-}
-
-span.template-sidebar--left {
-  grid-template: "sidebar mainA" "sidebar mainB";
-}
-
-span.template-sidebar--left > :nth-child(1) {
-  grid-area: sidebar;
-}
-
-span.template-sidebar--right {
-  grid-template: "mainA sidebar" "mainB sidebar";
-}
-
-span.template-sidebar--right > :nth-child(3) {
-  grid-area: sidebar;
-}
 /*# sourceMappingURL=style.css.map */
